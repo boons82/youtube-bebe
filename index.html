@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>youtube-bebe</title>
+<meta name="description" content="youtube-bebe is a personal tool its owner uses to upload their own videos to their own YouTube channel.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<nav>
+  <a href="./">Home</a>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms of Service</a>
+</nav>
+
+<h1>youtube-bebe</h1>
+<p class="lede">A personal tool that uploads its owner's own videos to the owner's own YouTube channel.</p>
+
+<h2>What it is</h2>
+<p>youtube-bebe is a small command-line program that runs on its owner's personal computer. The owner makes short videos on that computer, and the program uploads them to the owner's YouTube channel as private videos with a scheduled publish time.</p>
+<p>It is used by one person, the owner. It is not offered to the public, has no sign-up, and has no other users.</p>
+
+<h2>What it does with a Google Account</h2>
+<p>The owner signs in with Google and grants the program two YouTube permissions:</p>
+<ul>
+  <li><code>https://www.googleapis.com/auth/youtube.upload</code> — to upload the owner's video files to the owner's channel and set their title, description, and scheduled publish time.</li>
+  <li><code>https://www.googleapis.com/auth/youtube.readonly</code> — to read the channel's ID and handle before each upload, so that videos go to the intended channel only, and to read the status of the videos the program uploaded.</li>
+</ul>
+<p>The program does not edit or delete existing videos, does not read comments or viewers' data, and does not collect information about anyone else.</p>
+
+<h2>Where data is kept</h2>
+<p>The sign-in tokens are stored only in a file on the owner's computer. The program talks only to Google's servers. There is no youtube-bebe server and no database.</p>
+
+<h2>More</h2>
+<ul>
+  <li><a href="privacy.html">Privacy Policy</a></li>
+  <li><a href="terms.html">Terms of Service</a></li>
+</ul>
+<p>youtube-bebe uses YouTube API Services. Use of YouTube through this tool is subject to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+<footer>
+  Questions: <a href="https://github.com/boons82/youtube-bebe/issues">open an issue on GitHub</a>.
+</footer>
+</main>
+</body>
+</html>
